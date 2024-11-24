@@ -1,3 +1,6 @@
+#include <iostream>
+#include <cassert>
+using namespace std;
 class Node {
 public:
     int data;
@@ -22,10 +25,10 @@ public:
         Node*new_node=new Node();
         new_node->data=item;
         if (Is_empty()) {
-           front=back=new_node;
+            front=back=new_node;
         }
         else {
-             back->next=new_node;
+            back->next=new_node;
             back=new_node;
         }
         cnt++;
@@ -87,5 +90,14 @@ public:
 };
 
 int main() {
-  
+Queue Q;
+    Q.enqueue(10);
+    Q.enqueue(20);
+    Q.enqueue(30);
+    Q.enqueue(40);
+    Q.display();
+    Q.Dequeue();
+    Q.Dequeue();
+    Q.peek();
+    Q.search(50);
 }
