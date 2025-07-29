@@ -1,0 +1,58 @@
+--------------------Variables-----------------------
+-- Local Variable 
+--batch,function,SP -> Declare @x int 
+
+-------
+
+--Global Variable 
+--Can't declare or assign -> select @@servername
+/* -> select @@rowcount عدد الصفوف ال اتاثرت من اخر كويري
+-> select @@ version 
+-< select @@error
+-> select@@identity اخر identity وصلتله 
+-> select @x=@@rowcount 
+->select @@rowcount=100 غلط
+ممكن اعمل جلوبال جوا اللوكال بس العكس لا
+*/
+use ITI
+--assign local لازم اعمل رن للتلاته مع بعض عشان بيمشي ب batch
+declare @x int  -- او  @x int =100
+set @x=10
+select @x
+ --
+ declare @y int
+ select @y=10
+ select @y
+ --
+ declare @z int =(select avg(salary) from instructor)
+ select @z
+
+---
+declare @i int
+select @i=st_age from student where St_Id=6
+select @i 
+/* لو في كذا قيمه هيريترن اخر قيمه بس */
+------
+declare @o int , @m varchar(20)
+select @o=st_age , @m=st_Fname from student where St_Id=6
+select @o , @m
+---------------
+--return table
+declare @t table (x int)
+insert into @t 
+select st_id from student where st_address='alex'
+select count(*) from @t
+---
+declare @to int=5
+select top(@to)*
+from student
+--------
+execute('select * from student') -- execute str
+--
+-----------global var----------
+update student
+set st_Age+=1
+select @@ROWCOUNT --15 affected
+select @@ROWCOUNT --1 affected
+-------------------------------
+

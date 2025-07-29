@@ -1,0 +1,83 @@
+use mydb
+create schema HR
+alter schema HR transfer proj  --change schema
+--لو عملت table جديده
+--بنفسم الاسم هيعملها بس جوا dbo
+create table HR.times(
+dtime date default getdate()
+)
+select * from HR.times
+-------------------------------------------------
+--alias name for schema عشان لو اتغير اسمها 
+--pointer يعتبر
+create synonym H
+for HR.times
+
+select * from H
+---------------------------------------------------
+------------------DB INTEGRITY---------------------
+/*  
+                 -Domain integrity- range ->columns
+DB Constrains (data type , defualt , allow null/not , check constraint )
+	-using Rules or Triggers
+				*************************
+					-Entity integrity-  uniqueness -> rows
+PK ,Unique  
+-using index or Triggers 
+				**************************
+				-referenitial integrity 
+FK 
+-using Triggers 
+*/
+-----------------------------------------------------
+create schema test 
+
+create table test.emp(
+eid int identity,
+ename varchar(10),
+eadd varchar(30) default 'mansoura',
+hiredate date default getdate(),
+sal money,
+overtime int,
+netsal as overtime+sal persisted, --for stored in Hard Disk
+BD date,
+age int,
+gender varchar(1),
+hour_rate int not null,
+constraint c1 primary key(eid,ename),
+constraint c2 unique(sal),
+-- unique(sal,overtime) متنفعش عشان كده تعتبر pk ولازم الاتنين unique
+constraint c3 check(age between 20 and 45),
+constraint c4 check(gender='F' or gender='M')
+)
+alter table test.emp drop constraint c4
+ --------------------Rules-------------------------
+ -- constraint زي ال 
+-- الفرق انها بتسمع في الداتابيز 
+-- constraint علي ال table only 
+--rules shared  over columns
+--apllied on new values only 
+----------------------------------------------------
+create rule r1 as @x>1000
+
+sp_bindrule r1,'test.emp.sal'
+ 
+sp_unbindrule 'test.emp.sal'
+drop rule r1
+----------------------------------------------------
+create default d1 as 25
+
+sp_bindefault d1,'test.emp.age'
+ 
+sp_unbindefault 'test.emp.sal'
+drop rule r1
+----------------------------------------------------
+------------------create data type-------------------
+create rule r2 as @x>500
+create default d2 as 600
+
+sp_addtype cmplxt, 'int'
+
+sp_bindrule r2,cmplxt
+sp_bindefault d2,cmplxt
+-------------------------------------------------------

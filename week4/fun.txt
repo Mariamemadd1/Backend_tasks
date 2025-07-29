@@ -1,0 +1,68 @@
+----------------------Functions -----------------------
+-- Built in --
+--null isnull() one replacement , coalesce() multi replacment , nullif()
+--system db_name() , suser_name()
+--string substring , upper , lower , len
+--convert convert , cast , format
+--date getdate() year month day
+--agg count , max, min,avg , sum
+--ranking  row_number , rank , dense_rank , ntile
+--windowing leg , lead ;first_value, last
+
+--user defined--
+--scalar function ->return one value
+--inline table fun-> return table (body contain select only )
+--multi statment ->return table (body contain select , if , while..)
+
+--------------------------
+--scalar
+create function getsname(@id int)
+returns varchar(20) --> return type of fun 
+	begin 
+		declare @name varchar(20)
+		select @name=st_fname from student 
+		where st_id=@id
+		return @name -->retutn of select
+	end 
+select dbo.getsname(2)
+
+--inline
+create function getss(@did int)
+returns table
+as 
+return (
+select salary from Instructor
+where Dept_Id=@did
+)
+
+select * from  dbo.getss(10)
+--مقدرش اعمل excecute ☺جوا الفانكشن
+
+--multi ststmt
+create function getstuds(@format varchar(20))
+returns @t table (
+id int ,
+ename varchar (20)
+)
+as 
+begin 
+if @format='f'
+	insert into @t
+	select st_id,st_fname from student
+else if @format='l'
+	insert into @t
+	select st_id, st_lname from student
+else 
+	insert into @t
+	select st_id,st_fname + ' '+ st_lname as fullname from student 
+return
+end
+
+select * from dbo.getstuds('f')
+
+
+------
+-----windowing----
+--lag() over()  الي قبله
+--lead() الي بعده
+--first_value , last_value
