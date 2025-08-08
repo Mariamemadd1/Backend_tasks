@@ -1,0 +1,14 @@
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\net8.0\LibraryManagmentSystem.exe
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\net8.0\LibraryManagmentSystem.deps.json
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\net8.0\LibraryManagmentSystem.runtimeconfig.json
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\net8.0\LibraryManagmentSystem.dll
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\net8.0\LibraryManagmentSystem.pdb
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.AssemblyInfoInputs.cache
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.AssemblyInfo.cs
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.csproj.CoreCompileInputs.cache
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.dll
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\refint\LibraryManagmentSystem.dll
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.pdb
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\LibraryManagmentSystem.genruntimeconfig.cache
+E:\OS\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\net8.0\ref\LibraryManagmentSystem.dll
