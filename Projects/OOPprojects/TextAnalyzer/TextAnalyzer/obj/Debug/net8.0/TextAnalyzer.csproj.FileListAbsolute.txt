@@ -1,0 +1,14 @@
+E:\OS\TextAnalyzer\TextAnalyzer\bin\Debug\net8.0\TextAnalyzer.exe
+E:\OS\TextAnalyzer\TextAnalyzer\bin\Debug\net8.0\TextAnalyzer.deps.json
+E:\OS\TextAnalyzer\TextAnalyzer\bin\Debug\net8.0\TextAnalyzer.runtimeconfig.json
+E:\OS\TextAnalyzer\TextAnalyzer\bin\Debug\net8.0\TextAnalyzer.dll
+E:\OS\TextAnalyzer\TextAnalyzer\bin\Debug\net8.0\TextAnalyzer.pdb
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.AssemblyInfoInputs.cache
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.AssemblyInfo.cs
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.csproj.CoreCompileInputs.cache
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.dll
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\refint\TextAnalyzer.dll
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.pdb
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\TextAnalyzer.genruntimeconfig.cache
+E:\OS\TextAnalyzer\TextAnalyzer\obj\Debug\net8.0\ref\TextAnalyzer.dll
