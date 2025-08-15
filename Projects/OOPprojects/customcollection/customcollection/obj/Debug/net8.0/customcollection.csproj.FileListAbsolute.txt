@@ -1,0 +1,14 @@
+E:\OS\customcollection\customcollection\bin\Debug\net8.0\customcollection.exe
+E:\OS\customcollection\customcollection\bin\Debug\net8.0\customcollection.deps.json
+E:\OS\customcollection\customcollection\bin\Debug\net8.0\customcollection.runtimeconfig.json
+E:\OS\customcollection\customcollection\bin\Debug\net8.0\customcollection.dll
+E:\OS\customcollection\customcollection\bin\Debug\net8.0\customcollection.pdb
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.GeneratedMSBuildEditorConfig.editorconfig
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.AssemblyInfoInputs.cache
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.AssemblyInfo.cs
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.csproj.CoreCompileInputs.cache
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.dll
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\refint\customcollection.dll
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.pdb
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\customcollection.genruntimeconfig.cache
+E:\OS\customcollection\customcollection\obj\Debug\net8.0\ref\customcollection.dll
